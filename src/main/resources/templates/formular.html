@@ -21,7 +21,7 @@
         <div class="error" th:if="${#fields.hasErrors('form.prijmeni')}" th:errors="${form.prijmeni}"></div>
 
         <label for="datumNarozeni" class="radek">Datum narození:</label>
-        <input id="datumNarozeni" type="date" th:field="${form.datumNarozeni}" />
+        <input id="datumNarozeni" type="date" th:field="${form.datumNarozeni}" required/>
         <div class="error" th:if="${#fields.hasErrors('form.datumNarozeni')}" th:errors="${form.datumNarozeni}"></div>
 
         <div class="radek">Pohlaví:</div>
